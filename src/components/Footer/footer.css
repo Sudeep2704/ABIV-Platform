@@ -1,0 +1,152 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: left;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+  }
+  .footer-left {
+    max-width: 40%;
+    margin-left: 5%;
+  }
+  .footer-left h2 {
+    font-size: 45px;
+    margin-bottom: 15px;
+  }
+
+  .footer-left p {
+    margin: 5px 0;
+    line-height: 1.6;
+    font-size: larger;
+  }
+  
+  .email {
+    font-weight: 900;
+    font-size: larger;
+  }
+  
+  .rights {
+    padding-top: 15px;
+    color: grey;
+  }
+  
+  
+  .footer-right {
+    display: flex;
+    justify-content: space-between; 
+    width: 50%; 
+    font-size: larger;
+  }
+  
+  .footer-links, .footer-social {
+    flex-basis: 45%; 
+    margin-bottom: 20px;
+    margin-top: 90px;
+  }
+  
+  .footer-links h3, .footer-social h3 {
+    margin-bottom: 15px;
+  }
+  
+  .footer-links ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li, .footer-social li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links li a, .footer-social ul a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-links li a:hover {
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .footer-social ul {
+    display: flex;
+    gap: 15px;
+  }
+  
+  @media (max-width: 1024px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-left {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+  
+    .footer-right {
+      max-width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+    }
+  
+    .footer-links, .footer-social {
+      max-width: 50%;
+      
+    }
+  
+    .footer-links ul, .footer-social ul {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-left {
+      max-width: 100%;
+    }
+  
+    .footer-right {
+      flex-direction: column;
+    }
+  
+    .footer-links ul, .footer-social ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footer-links, .footer-social {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-left h2 {
+      font-size: 20px;
+    }
+  
+    .footer-links ul {
+      flex-direction: column;
+    }
+    .footer-social ul {
+        flex-direction: row;
+    
+    }
+  }
+  
